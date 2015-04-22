@@ -1,0 +1,2 @@
+# UniversalListView
+一个万能的ListView适配器，避免了自定义ListView适配器过程中重复冗余的编码。
