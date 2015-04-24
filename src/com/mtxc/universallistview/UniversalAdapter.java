@@ -54,8 +54,8 @@ public abstract class UniversalAdapter<T> extends BaseAdapter {
 	/**
 	 * 公布给外界的设置控件值的抽象方法
 	 * @param holder
-	 * @param t
+	 * @param data
 	 */
-	public abstract void updateItem(ViewHolder holder, T t);
+	public abstract void updateItem(ViewHolder holder, T data);
 
 }

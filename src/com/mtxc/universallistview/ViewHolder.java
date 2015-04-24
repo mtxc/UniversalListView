@@ -5,6 +5,8 @@ import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class ViewHolder {
 
@@ -89,4 +91,35 @@ public class ViewHolder {
 	public View getConvertView() {
 		return mConvertView;
 	}
+	
+	/*************************以下是对具体控件设置资源的方法，补充中...**************************/
+	
+	/**
+	 * TextView相关
+	 */
+	public ViewHolder setTextViewText(int viewId, String text){
+		TextView tv = getView(viewId);
+		tv.setText(text);
+		return this;
+	}
+	public ViewHolder setTextViewText(int viewId, int resId){
+		TextView tv = getView(viewId);
+		tv.setText(resId);
+		return this;
+	}
+	
+	/**
+	 * ImageView相关
+	 */
+	public ViewHolder setImageViewImageResource(int viewId, int resId){
+		ImageView iv = getView(viewId);
+		iv.setImageResource(resId);
+		return this;
+	}
+	public ViewHolder setImageViewAlpha(int viewId, float alpha){
+		ImageView iv = getView(viewId);
+		iv.setAlpha(alpha);
+		return this;
+	}
+	
 }
