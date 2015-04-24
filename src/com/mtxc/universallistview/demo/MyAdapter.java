@@ -1,7 +1,10 @@
 package com.mtxc.universallistview.demo;
 
 import java.util.List;
+
 import com.mtxc.universallistview.R;
+import com.mtxc.universallistview.ViewHolder;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,7 +16,7 @@ import android.widget.TextView;
 public class MyAdapter extends BaseAdapter {
 
 	private Context context;
-
+	
 	private LayoutInflater inflater;
 
 	private List<Data> datas;
@@ -41,48 +44,14 @@ public class MyAdapter extends BaseAdapter {
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		ViewHolder holder;
-		if (convertView == null) {
-			convertView = inflater.inflate(R.layout.list_item, null);
-			holder = new ViewHolder();
-			holder.headImage = (ImageView) convertView
-					.findViewById(R.id.iv_head);
-			holder.tvName = (TextView) convertView.findViewById(R.id.tv_name);
-			holder.tvBlog = (TextView) convertView.findViewById(R.id.tv_blog);
-			holder.tvPraise = (TextView) convertView
-					.findViewById(R.id.tv_praise);
-			holder.tvBrowse = (TextView) convertView
-					.findViewById(R.id.tv_browse);
-			holder.tvComment = (TextView) convertView
-					.findViewById(R.id.tv_comment);
-			convertView.setTag(holder);
-		} else {
-			holder = (ViewHolder) convertView.getTag();
-		}
-		holder.headImage.setImageResource(datas.get(position).getHeadImage());
-		holder.tvName.setText(datas.get(position).getName());
-		holder.tvBlog.setText(datas.get(position).getBlog());
-		holder.tvPraise.setText("‘ﬁ(" + datas.get(position).getPraise() + ")");
-		holder.tvBrowse.setText("‰Ø¿¿(" + datas.get(position).getBrowse() + ")");
-		holder.tvComment
-				.setText("∆¿¬€(" + datas.get(position).getComment() + ")");
-		return convertView;
-	}
-
-	private class ViewHolder {
-
-		public ImageView headImage;
-
-		public TextView tvName;
-
-		public TextView tvBlog;
-
-		public TextView tvPraise;
-
-		public TextView tvBrowse;
-
-		public TextView tvComment;
-
+		ViewHolder holder = ViewHolder.get(context, position, convertView, R.layout.list_item, parent);
+		((ImageView)holder.getView(R.id.iv_head)).setImageResource(datas.get(position).getHeadImage());
+		((TextView)holder.getView(R.id.tv_name)).setText(datas.get(position).getName());
+		((TextView)holder.getView(R.id.tv_blog)).setText(datas.get(position).getBlog());
+		((TextView)holder.getView(R.id.tv_praise)).setText("‘ﬁ(" + datas.get(position).getPraise() + ")");
+		((TextView)holder.getView(R.id.tv_browse)).setText("‰Ø¿¿(" + datas.get(position).getBrowse() + ")");
+		((TextView)holder.getView(R.id.tv_comment)).setText("∆¿¬€(" + datas.get(position).getComment() + ")");
+		return holder.getConvertView();
 	}
 
 }
