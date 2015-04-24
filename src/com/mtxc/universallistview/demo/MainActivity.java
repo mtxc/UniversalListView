@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
 		datas.add(new Data(R.drawable.head4, "卡卡西", "火影忍者火影忍者火影忍者火影忍者火影忍者",13, 13, 7));
 		datas.add(new Data(R.drawable.head5, "止水", "火影忍者火影忍者火影忍者火影忍者火影忍者", 6, 11, 1));
 		datas.add(new Data(R.drawable.head6, "自来也", "火影忍者火影忍者火影忍者火影忍者火影忍者", 3, 10, 8));
-		adapter = new MyAdapter(this, datas);
+		adapter = new MyAdapter(this, datas, R.layout.list_item);
 	}
 
 }

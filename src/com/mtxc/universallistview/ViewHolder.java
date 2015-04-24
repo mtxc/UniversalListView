@@ -13,14 +13,8 @@ public class ViewHolder {
 	 */
 	private SparseArray<View> mViews;
 
-	/**
-	 * 存储item所在位置
-	 */
 	private int mPosition;
 
-	/**
-	 * 存储convertView
-	 */
 	private View mConvertView;
 
 	/**
@@ -73,8 +67,10 @@ public class ViewHolder {
 
 	/**
 	 * 根据id获取item中的控件
-	 * @param viewId   控件id
-	 * @return    控件对象
+	 * 
+	 * @param viewId
+	 *            控件id
+	 * @return 控件对象
 	 */
 	public <T extends View> T getView(int viewId) {
 		View view = mViews.get(viewId);
