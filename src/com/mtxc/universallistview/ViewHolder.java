@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class ViewHolder {
 
 	/**
-	 * ´æ´¢itemÖĞµÄËùÓĞÊÓÍ¼¿Ø¼ş
+	 * å­˜å‚¨itemä¸­çš„æ‰€æœ‰è§†å›¾æ§ä»¶
 	 */
 	private SparseArray<View> mViews;
 
@@ -20,16 +20,16 @@ public class ViewHolder {
 	private View mConvertView;
 
 	/**
-	 * ViewHolderµÄ¹¹Ôì·½·¨
+	 * ViewHolderçš„æ„é€ æ–¹æ³•
 	 * 
 	 * @param context
-	 *            ´«ÈëÉÏÏÂÎÄ
+	 *            ä¼ å…¥ä¸Šä¸‹æ–‡
 	 * @param position
-	 *            itemËùÔÚÎ»ÖÃ
+	 *            itemæ‰€åœ¨ä½ç½®
 	 * @param itemLayoutId
-	 *            itemµÄ²¼¾ÖÎÄ¼ş
+	 *            itemçš„å¸ƒå±€æ–‡ä»¶
 	 * @param parent
-	 *            ¸¸¿Ø¼ş
+	 *            çˆ¶æ§ä»¶
 	 */
 	public ViewHolder(Context context, int position, int itemLayoutId,
 			ViewGroup parent) {
@@ -41,18 +41,18 @@ public class ViewHolder {
 	}
 
 	/**
-	 * »ñÈ¡ViewHolderµÄÈë¿Ú·½·¨
+	 * è·å–ViewHolderçš„å…¥å£æ–¹æ³•
 	 * 
 	 * @param context
-	 *            ´«ÈëÉÏÏÂÎÄ
+	 *            ä¼ å…¥ä¸Šä¸‹æ–‡
 	 * @param position
-	 *            itemËùÔÚÎ»ÖÃ
+	 *            itemæ‰€åœ¨ä½ç½®
 	 * @param convertView
-	 *            adapter´«ÈëµÄconvertView
+	 *            adapterä¼ å…¥çš„convertView
 	 * @param itemLayoutId
-	 *            itemµÄ²¼¾ÖÎÄ¼ş
+	 *            itemçš„å¸ƒå±€æ–‡ä»¶
 	 * @param parent
-	 *            ¸¸¿Ø¼ş
+	 *            çˆ¶æ§ä»¶
 	 * @return
 	 */
 	public static ViewHolder get(Context context, int position,
@@ -68,11 +68,11 @@ public class ViewHolder {
 	}
 
 	/**
-	 * ¸ù¾İid»ñÈ¡itemÖĞµÄ¿Ø¼ş
+	 * æ ¹æ®idè·å–itemä¸­çš„æ§ä»¶
 	 * 
 	 * @param viewId
-	 *            ¿Ø¼şid
-	 * @return ¿Ø¼ş¶ÔÏó
+	 *            æ§ä»¶id
+	 * @return æ§ä»¶å¯¹è±¡
 	 */
 	public <T extends View> T getView(int viewId) {
 		View view = mViews.get(viewId);
@@ -84,7 +84,7 @@ public class ViewHolder {
 	}
 
 	/**
-	 * ÓÃÓÚÍâ½ç·ÃÎÊconvertView
+	 * ç”¨äºå¤–ç•Œè®¿é—®convertView
 	 * 
 	 * @return
 	 */

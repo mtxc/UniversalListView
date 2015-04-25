@@ -19,9 +19,9 @@ public class MyAdapter extends UniversalAdapter<Data> {
 		holder.setImageViewImageResource(R.id.iv_head, t.getHeadImage())
 				.setTextViewText(R.id.tv_name, t.getName())
 				.setTextViewText(R.id.tv_blog, t.getBlog())
-				.setTextViewText(R.id.tv_praise, "‘ﬁ(" + t.getPraise() + ")")
-				.setTextViewText(R.id.tv_browse, "‰Ø¿¿(" + t.getBrowse() + ")")
-				.setTextViewText(R.id.tv_comment, "∆¿¬€(" + t.getComment() + ")");
+				.setTextViewText(R.id.tv_praise, "Ëµû(" + t.getPraise() + ")")
+				.setTextViewText(R.id.tv_browse, "ÊµèËßà(" + t.getBrowse() + ")")
+				.setTextViewText(R.id.tv_comment, "ËØÑËÆ∫(" + t.getComment() + ")");
 	}
 
 }
