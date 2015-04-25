@@ -1,7 +1,7 @@
 package com.mtxc.universallistview.demo;
 
 /**
- * 适配器数据类
+ * 閫傞厤鍣ㄦ暟鎹被
  */
 public class Data {
 	

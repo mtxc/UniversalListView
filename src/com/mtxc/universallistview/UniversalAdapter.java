@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 /**
- * 万能的ListView适配器类
+ * 涓囪兘鐨凩istView閫傞厤鍣ㄧ被
  *
- * @param <T> 需要绑定的数据类型
+ * @param <T> 闇�瑕佺粦瀹氱殑鏁版嵁绫诲瀷
  */
 public abstract class UniversalAdapter<T> extends BaseAdapter {
 	
@@ -52,7 +52,7 @@ public abstract class UniversalAdapter<T> extends BaseAdapter {
 	}
 	
 	/**
-	 * 公布给外界的设置控件值的抽象方法
+	 * 鍏竷缁欏鐣岀殑璁剧疆鎺т欢鍊肩殑鎶借薄鏂规硶
 	 * @param holder
 	 * @param t
 	 */

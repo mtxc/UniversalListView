@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
 	}
 
 	/**
-	 * ³õÊ¼»¯ÊÓÍ¼
+	 * åˆå§‹åŒ–è§†å›¾
 	 */
 	private void initView() {
 		listView = (ListView) findViewById(R.id.listView);
@@ -34,16 +34,16 @@ public class MainActivity extends Activity {
 	}
 
 	/**
-	 * ³õÊ¼»¯Êı¾İ
+	 * åˆå§‹åŒ–æ•°æ®
 	 */
 	private void initData() {
 		datas = new ArrayList<Data>();
-		datas.add(new Data(R.drawable.head1, "ÃùÈË", "»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß", 8, 11, 5));
-		datas.add(new Data(R.drawable.head2, "×ôÖú", "»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß", 3, 12, 4));
-		datas.add(new Data(R.drawable.head3, "Ğ¡Ó£", "»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß", 5, 14, 2));
-		datas.add(new Data(R.drawable.head4, "¿¨¿¨Î÷", "»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß",13, 13, 7));
-		datas.add(new Data(R.drawable.head5, "Ö¹Ë®", "»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß", 6, 11, 1));
-		datas.add(new Data(R.drawable.head6, "×ÔÀ´Ò²", "»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß»ğÓ°ÈÌÕß", 3, 10, 8));
+		datas.add(new Data(R.drawable.head1, "é¸£äºº", "ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…", 8, 11, 5));
+		datas.add(new Data(R.drawable.head2, "ä½åŠ©", "ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…", 3, 12, 4));
+		datas.add(new Data(R.drawable.head3, "å°æ¨±", "ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…", 5, 14, 2));
+		datas.add(new Data(R.drawable.head4, "å¡å¡è¥¿", "ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…",13, 13, 7));
+		datas.add(new Data(R.drawable.head5, "æ­¢æ°´", "ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…", 6, 11, 1));
+		datas.add(new Data(R.drawable.head6, "è‡ªæ¥ä¹Ÿ", "ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…ç«å½±å¿è€…", 3, 10, 8));
 		adapter = new MyAdapter(this, datas, R.layout.list_item);
 	}
 
