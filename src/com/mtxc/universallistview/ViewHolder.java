@@ -92,10 +92,18 @@ public class ViewHolder {
 		return mConvertView;
 	}
 	
-	/*************************ÒÔÏÂÊÇ¶Ô¾ßÌå¿Ø¼þÉèÖÃ×ÊÔ´µÄ·½·¨£¬²¹³äÖÐ...**************************/
+	/**
+	 * ç”¨äºŽå¤–ç•Œè®¿é—®position
+	 * @return
+	 */
+	public int getPosition(){
+		return mPosition;
+	}
+	
+	/*************************ï¿½ï¿½ï¿½ï¿½ï¿½Ç¶Ô¾ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...**************************/
 	
 	/**
-	 * TextViewÏà¹Ø
+	 * TextViewï¿½ï¿½ï¿½
 	 */
 	public ViewHolder setTextViewText(int viewId, String text){
 		TextView tv = getView(viewId);
@@ -107,9 +115,13 @@ public class ViewHolder {
 		tv.setText(resId);
 		return this;
 	}
+	public String getTextViewText(int viewId){
+		TextView tv = getView(viewId);
+		return tv.getText();
+	}
 	
 	/**
-	 * ImageViewÏà¹Ø
+	 * ImageViewï¿½ï¿½ï¿½
 	 */
 	public ViewHolder setImageViewImageResource(int viewId, int resId){
 		ImageView iv = getView(viewId);
