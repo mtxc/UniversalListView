@@ -74,6 +74,7 @@ public class ViewHolder {
 	 *            控件id
 	 * @return 控件对象
 	 */
+	@SuppressWarnings("unchecked")
 	public <T extends View> T getView(int viewId) {
 		View view = mViews.get(viewId);
 		if (view == null) {
@@ -100,10 +101,10 @@ public class ViewHolder {
 		return mPosition;
 	}
 	
-	/*************************�����ǶԾ���ؼ�������Դ�ķ�����������...**************************/
+	/*************************具体控件的更改属性的方法，补充中...**************************/
 	
 	/**
-	 * TextView���
+	 * TextView相关
 	 */
 	public ViewHolder setTextViewText(int viewId, String text){
 		TextView tv = getView(viewId);
@@ -117,11 +118,11 @@ public class ViewHolder {
 	}
 	public String getTextViewText(int viewId){
 		TextView tv = getView(viewId);
-		return tv.getText();
+		return tv.getText().toString();
 	}
 	
 	/**
-	 * ImageView���
+	 * ImageView相关
 	 */
 	public ViewHolder setImageViewImageResource(int viewId, int resId){
 		ImageView iv = getView(viewId);

@@ -1,12 +1,10 @@
 package com.mtxc.universallistview.demo;
 
 import java.util.List;
+import android.content.Context;
 import com.mtxc.universallistview.R;
 import com.mtxc.universallistview.UniversalAdapter;
 import com.mtxc.universallistview.ViewHolder;
-import android.content.Context;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 public class MyAdapter extends UniversalAdapter<Data> {
 
